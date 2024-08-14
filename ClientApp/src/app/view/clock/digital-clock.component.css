@@ -1,0 +1,11 @@
+.digital-clock {
+  font-family: 'Droid Arabic Kufi', sans-serif;
+  font-size: 48px;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+}

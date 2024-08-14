@@ -1,0 +1,127 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+mat-grid-list {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+mat-card {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  border-radius: 12px;
+}
+
+.custom-card {
+  background-image: url('src/assets/cover.jpeg');
+  width: 100%;
+  height: 50%;
+  position: relative;
+  padding: 1rem;
+  border: solid gold;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+.custom-icon {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.custom-button {
+  display: inline-block;
+  background-color: white;
+  color: #005710;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 2rem);
+  box-sizing: border-box;
+}
+
+mat-card-footer {
+  margin-top: 55px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.full-width-tile {
+  background-size: cover;
+}
+
+.salah-time-title {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+
+mat-card {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+mat-grid-list {
+  width: 100%;
+  height: 100%;
+}
+
+.custom-table {
+  background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a 3D shadow */
+}
+
+.custom-table mat-header-cell,
+.custom-table mat-cell {
+  background-color: rgba(4, 0, 0, 0); /* Transparent background */
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Adds a border effect to the font */
+}
+
+.custom-table mat-header-cell {
+  border-bottom: 2px solid white; /* Adds a border to header cells */
+}
+
+.custom-paginator {
+  background-color: rgba(4, 0, 0, 0); /* Transparent background */
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a 3D shadow */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Adds a border effect to the font */
+}
+
+.custom-paginator .mat-paginator-page-size,
+.custom-paginator .mat-paginator-range-label,
+.custom-paginator .mat-paginator-navigation-button {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Adds a border effect to the font */
+}
+

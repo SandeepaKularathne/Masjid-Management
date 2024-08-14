@@ -1,0 +1,97 @@
+mat-card {  width: 100%;  height:100%;  margin: 10px 20px -10px 10px; border-radius: 50px 50px 0 0;background: rgb(222, 216, 202);  }
+
+mat-card-content { overflow: auto; height: 100%; }
+
+mat-card-header { background: rgb(222, 216, 202); border-radius: 50px 50px 0 0;   justify-content: space-around ; box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);}
+
+#loading img{ width: 30px; height: 25px; margin-left: 200px;}
+
+.csearch{   height: 40px;   width: 100%;  margin-top: 5px; }
+
+#ssearch mat-card-content{   padding-top: 30px; }
+
+#ssearch mat-form-field { padding-left: 15px; width: 200px; }
+
+#ssearch button{ width: 195px; margin-left:10px; margin-top: 5px; background-color: rgba(0, 0, 0, 0.2);   }
+
+
+
+/* Employee Form */
+#sandahform {
+  padding-top: 20px;
+  border: 10px solid  #ded8ca;
+  background-color: #ffffff;
+  border-radius: 10px 20px  10px 10px;
+  width: initial;
+  height: auto;
+;
+}
+
+/* Employee Form > Photo Panel  */
+#imgpanel {
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+#imgpanel img{
+  height: 100px;
+  width: 100px;
+}
+
+#selectbutton, #clearbutton{
+  width: 150px;
+  display: block;
+  margin-left: 150px;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#selectbutton{
+  margin-top: -100px;
+}
+
+
+/* Employee Form > Button Panel  */
+#butpanel{  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#butpanel button{
+  width: 82px;
+  margin:5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #180303;
+}
+
+
+.selected-row{
+  background-color: rgb(192, 106, 9) !important;
+
+}
+
+.mat-row:hover {
+  background-color: inherit!important;
+
+}
+
+#sandahform mat-form-field .ng-dirty{
+  background-color: #1d8a1d;
+
+}
+
+
+button:disabled {
+  opacity: 0.5;
+}
+
+#employeeform mat-form-field .ng-valid,
+.ng-valid.required {
+  background-color: #ffffff;
+}
+
+
+

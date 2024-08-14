@@ -1,0 +1,87 @@
+<mat-grid-list gutterSize="7" [cols]="4" rowHeight="4rem" >
+
+<mat-grid-tile [colspan]="3" [rowspan]="8" class="full-width-tile">
+   <mat-card style=" background-image: url('/assets/cover.jpeg');">
+       <mat-card-title class="salah-time-title">SALAH TIME TABLE</mat-card-title>
+       <mat-card-content>
+          <br>
+          <app-digital-clock></app-digital-clock>
+           <br>
+           <div>
+               <mat-table [dataSource]="data" class="custom-table">
+                   <ng-container *ngFor="let column of columns; let i = index;" [matColumnDef]="column">
+                       <mat-header-cell *matHeaderCellDef> {{ headers[i] }} </mat-header-cell>
+                       <mat-cell *matCellDef="let element">{{ uiassist.getProperty(element, binders[i]) }} </mat-cell>
+                   </ng-container>
+                   <mat-header-row *matHeaderRowDef="columns"></mat-header-row>
+                   <mat-row *matRowDef="let row; columns: columns;"></mat-row>
+               </mat-table>
+               <mat-paginator class="custom-paginator" [length]="20" [pageSize]="5" [pageSizeOptions]="[5, 10, 20, 30]"></mat-paginator>
+           </div>
+       </mat-card-content>
+   </mat-card>
+</mat-grid-tile>
+
+
+
+<mat-grid-tile [colspan]="1" [rowspan]="8" >
+    <mat-card>
+      <mat-card-title style="background-image: url('assets/homeheader4.jpg')">Contact Admin</mat-card-title>
+      <mat-card-content >
+        <mat-list>
+          <mat-list-item *ngFor="let message of generalmessages">
+            <mat-icon matListItemIcon>{{message.icon}}</mat-icon>
+            <div matListItemTitle >{{message.name}}</div>
+              <div matListItemLine >{{message.tel}}</div>
+              <div matListItemLine>{{message.updated | date}}</div>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+
+<mat-grid-tile [colspan]="4" [rowspan]="3" id="quicklinks">
+        <mat-card class="custom-card">
+            <mat-icon class="custom-icon">account_circle</mat-icon>
+
+            <mat-card-footer>
+                <a routerLink="employee" class="custom-button">Employee</a>
+            </mat-card-footer>
+        </mat-card>
+
+        <mat-card class="custom-card">
+            <mat-icon class="custom-icon">home</mat-icon>
+
+            <mat-card-footer>
+                <a routerLink="masjid" class="custom-button">Masjid</a>
+            </mat-card-footer>
+        </mat-card>
+
+        <mat-card class="custom-card">
+            <mat-icon class="custom-icon">house</mat-icon>
+
+            <mat-card-footer>
+                <a routerLink="house" class="custom-button">House</a>
+            </mat-card-footer>
+        </mat-card>
+
+        <mat-card class="custom-card">
+            <mat-icon class="custom-icon">group</mat-icon>
+
+            <mat-card-footer>
+                <a routerLink="member" class="custom-button">Member</a>
+            </mat-card-footer>
+        </mat-card>
+
+        <mat-card class="custom-card">
+            <mat-icon class="custom-icon">payment</mat-icon>
+
+            <mat-card-footer>
+                <a routerLink="sandah" class="custom-button">Sandah</a>
+            </mat-card-footer>
+        </mat-card>
+    </mat-grid-tile>
+
+
+</mat-grid-list>
+
